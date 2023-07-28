@@ -1,0 +1,1 @@
+function preventSubmit(){return!1}$(document).on("click","input:submit,button:submit",preventSubmit);$("html, body").addClass("noClick");$(window).load(function(){$(document).off("click","input:submit,button:submit",preventSubmit);$("html, body").removeClass("noClick")})
